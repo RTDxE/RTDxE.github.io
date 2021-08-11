@@ -224,7 +224,7 @@
 		    	window._gameScore = gameScore;
 		    	gameScore.player.ready
                 .then(() => {
-                    gameScore.ads.showPreloader().then(() => gameScore.ads.showSticky(););
+                    gameScore.ads.showPreloader().then(() => {gameScore.ads.showSticky();});
                     if (!Engine.isWebGLAvailable()) {
                         displayFailureNotice('WebGL not available');
                     } else {
