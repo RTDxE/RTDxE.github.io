@@ -222,16 +222,12 @@
 	    	window.onGSInit = (gameScore) => {
 
 		    	window._gameScore = gameScore;
-                        console.log("wait");
 		    	gameScore.player.ready
                 .then(() => {
-                    console.log("done");
-                    gameScore.ads.showPreloader();
-                    console.log("load game");
+                    gameScore.ads.showPreloader().then(() => gameScore.ads.showSticky(););
                     if (!Engine.isWebGLAvailable()) {
                         displayFailureNotice('WebGL not available');
                     } else {
-
                         setStatusMode('indeterminate');
                         engine.startGame({
                             'onProgress': function (current, total) {
