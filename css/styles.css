@@ -17,8 +17,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
     background: #121212;
+}
+
+.footer
+{
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .content {
@@ -28,13 +36,13 @@ body {
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1000;
-    filter: blur(8px);
+    filter: blur(8px) brightness(0.5);
     background-image: url("https://media.discordapp.net/attachments/1089169890478395482/1089170529170239548/debc451c5bce4ceb37166a39cf8e0ff8.png?width=467&height=467");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -110,6 +118,13 @@ body {
 a {
     box-shadow: inset 0 0 0 0 #fff;
     color: #54b3d6;
+    transition: color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+    text-decoration: none;
+}
+
+.footer a {
+    box-shadow: inset 0 0 0 0 #fff;
+    color: #ddd;
     padding: 0 0.25rem;
     margin: 0 -0.25rem;
     transition: color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
