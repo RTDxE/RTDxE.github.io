@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ваша Страница</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Фиксированный Бар навигации -->
+        <header class="navbar">
+            <div class="logo">
+                <img id="logo" src="/media/title.png" />
+                <img id="logo-mobile" src="/media/title_square.png" />
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#main">Тизер</a></li> -->
+                    <li><a href="#info">Инфо</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Полноэкранный блок с заголовком и YouTube видео -->
+        <section id="main" class="fullscreen container">
+            <div class="background">
+                <video
+                    id="background-video"
+                    autoplay
+                    loop
+                    muted
+                    poster="/media/title_background.png"
+                >
+                    <source
+                        src="/media/title_background.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+                <div class="blur"></div>
+                <div class="pattern"></div>
+            </div>
+
+            <div>
+                <div class="title">
+                    <img src="/media/title.png" />
+                    <p>Сколько тайн хранит в себе Антлос - знаешь только ты.</p>
+                </div>
+                <div class="split container" id="info">
+                    <div class="left">
+                        <div class="video-container">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/mX1QGmy75sw?si=VxI6GAX6mOB7RE8y"
+                                title="MistTale Teaser Trailer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="right black-background">
+                        <h2>О проекте</h2>
+                        <p>
+                            <b>MistTale</b> - это не просто Minecraft сервер с
+                            элементами RPG. Мы изучили многие RPG сервера и
+                            решили создать то, что до нас не делал еще никто.
+                            Здесь каждый найдет для себя то, что ему
+                            действительно по душе.
+                        </p>
+                        <h2>Разработка</h2>
+                        <p>
+                            На данный момент проект находится на стадии
+                            разработки. Мы тратим огромное количество времени на
+                            создание контента, чтобы подарить вам наилучший
+                            опыт.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gradient"></div>
+        </section>
+
+        <section class="line drop-shadow">
+        </section>
+        <!-- Полноэкранный блок с изображением и текстом -->
+        <section id="about" class="fullscreen container">
+            <div class="background fixed-background">
+                <!-- <img
+                    src="https://media.discordapp.net/attachments/1134633295888535713/1156219466741448844/2023-09-08_16.22.03.png?ex=65142cca&is=6512db4a&hm=7695caa2b4c52a998a924b01067fcab726cbb7614f8c1b95ebb9eab993cbaf0c&=&width=791&height=444"
+                    alt=""
+                />
+                <div class="blur"></div> -->
+            </div>
+            <div class="split">
+                <div class="left black-background">
+                    <h2>Мы в соцсетях</h2>
+                    <p>
+                        Будь в курсе последних событий!<br />Следи за нами в
+                        социальных сетях:
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">Discord</a> <a href="#">Telegram</a
+                            ><a href="#">VK</a>
+                        </li>
+                    </ul>
+                    <h2>Наша команда</h2>
+                    <p>
+                        Наша команда состоит из энтузиастов, которые любят
+                        играть и создавать игры. На данный момент мы
+                        разрабатываем проект в свободное время и нам не хватает
+                        именно тебя!
+                    </p>
+                    <a href="#">Хочу в команду!</a>
+                </div>
+                <div class="right">
+                    <img
+                        src="https://media.discordapp.net/attachments/1134633295888535713/1156229758221308044/n16zFmTBcp0.jpg?ex=65143660&is=6512e4e0&hm=98b9f24caee9530920baa6fd33d282ed0818db5ccd3e3b20bbaa5e8fa481cd7e&=&width=854&height=444"
+                        alt="Изображение"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="drop-shadow">
+            <p>&copy; MistTale Studios, 2023</p>
+        </footer>
+    </body>
+</html>
